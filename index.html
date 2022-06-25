@@ -39,7 +39,7 @@
             </div>
           </nav>
     </header>
-    <main class="d-flex flex-column w-75 h-100 p-5 mx-auto bg-light">
+    <main>
         <h1 class="mb-5 text-center">Gere seu link Whatsapp</h1>
             <div class="form-group m-3">
                 <label>Seu número:</label>
@@ -50,8 +50,9 @@
                   <textarea name="mensagem" id="mensagem" class="form-control shadow-sm" cols="20" rows="4" placeholder="Sua mensagem personalizada aqui"></textarea>
             </div>
             <div class="form-group m-3">
-                <input type="button" class="btn btn-dark m-1 shadow-sm" value="Obter Link" onclick="gerarLink()">
+                <input type="button" class="btn btn-success m-1 shadow-sm" value="Gerar Link" onclick="gerarLink()">
                 <input type="button" class="btn btn-primary m-1 shadow-sm" value="Copiar Link" onclick="copiarLink()">
+                <input type="button" class="btn btn-warning" value="Limpar Campos" onclick="limparCampos()">
             </div>
             <div class="form-group m-3">
                 <textarea name="link" id="link" class="form-control link shadow-sm" cols="20" rows="3">
