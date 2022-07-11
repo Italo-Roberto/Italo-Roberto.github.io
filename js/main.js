@@ -14,10 +14,14 @@ function gerarLink() {
 }
 
 function copiarLink(){
-    navigator.clipboard.writeText(link.value)
-    .then(() => {
-        alert('Link copiado com sucesso! Abra uma nova aba de navegador e digite Crtl + V, para inicar uma conversa com esse link')
-    })
+    if(gerarLink && mensagem.value != ''){
+        navigator.clipboard.writeText(link.value)
+        .then(() => {
+            alert('Link copiado com sucesso! Abra uma nova aba de navegador e digite Crtl + V, para inicar uma conversa com esse link')
+        })
+    }else{
+        alert('Necessário preencher campos de Número e Mensagem para copiar o link gerado!')
+    }
 }
 
 function limparCampos() {
